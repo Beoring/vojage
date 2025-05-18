@@ -23,7 +23,7 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header sticky_header">
-      <div class="header_gradient"></div>
+
       <div class="container footer-social">
         <div class="footer-logo-content">
           <a class="footer-logo" href="./index.html">
@@ -31,46 +31,51 @@
           </a>
         </div>
         <ul class="footer-social-list list">
-          <li class="footer-social-item"><a class="link" href="./index.html">Главная</a></li>
-          <li class="footer-social-item"><a class="link" href="./conditions.html">Условия</a></li>
-          <li class="footer-social-item"><a class="link" href="./contacts.html">Контакты</a></li>
-          <li class="footer-social-item">
-            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
+          <li class="footer-social-item"><a class="link footer-social-item-link current" href="./index.html">Главная</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
         </ul>
         <div class="footer-social">
           <ul class="footer-social-list list">
             <li class="footer-social-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-social-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+              <a class="link footer-social-item-link footer-social-item-link-1" href="tel:+48111111111">+48 111 111 111</a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-social-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+              <a class="footer-social-link-1 link" href="">
+                <img
+                  class="certificates-item-content-image img"
+                  src="./images/ua.png"
+                  width="25"
+                />
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-social-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-social-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link-1 link" href="">
+                  <img
+                    class="certificates-item-content-image img"
+                    src="./images/pl.png"
+                    width="25"
+                  />
+                </a>
+              </li>
+                <li class="footer-social-item">
+                  <a class="footer-social-link-1 link" href="">
+                    <img
+                      class="certificates-item-content-image img"
+                      src="./images/ru.png"
+                      width="25"
+                    />
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <div class="footer-social">
+                    <button class="header-button btn" type="button">Личный кабинет</button>
+                  </div>
+                </li>
           </ul>
         </div>
       </div>
+      <div class="header_gradient"></div>
     </header>
     <!-- Уникальный контент страницы -->
     <main>
@@ -137,7 +142,7 @@
           <br />
           <br />
           <div class="hero-modal hero-title">
-            <button class="hero-button btn" type="button" data-modal-open>Послать запрос</button>
+            <button class="hero-button btn" type="button" >Послать запрос</button>
           </div>
         </div>
         <div class="hero-padding"></div>
@@ -148,7 +153,9 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-1>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -159,9 +166,11 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-2>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -172,7 +181,7 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
           </ul>
         </div>
@@ -181,7 +190,9 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-3>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -192,9 +203,11 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-4>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -205,7 +218,7 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
           </ul>
         </div>
@@ -214,7 +227,9 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-5>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -225,9 +240,11 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item a1 picture__wrapper">
+              <button  class="test" type="button" data-modal-open-6>
+                <div>
               <div class="advantages-item-content">
                 <h3 class="advantages-item-title">Авто под выкуп</h3>
               </div>
@@ -238,7 +255,7 @@
                   alt="Кабинет"
                   width="550"
                 />
-              </div>
+              </div></div></button>
             </li>
           </ul>
         </div>
@@ -321,11 +338,11 @@
           </a>
         </div>
         <ul class="footer-social-list list">
-          <li class="footer-social-item"><a class="link" href="./index.html">Главная</a></li>
-          <li class="footer-social-item"><a class="link" href="./conditions.html">Условия</a></li>
-          <li class="footer-social-item"><a class="link" href="./contacts.html">Контакты</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a>         &#10072</li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a>         &#10072</li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a>         &#10072</li>
           <li class="footer-social-item">
-            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="link footer-social-item-link" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
         <div class="footer-social">
@@ -364,13 +381,21 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" type="button" title="Закрыть" data-modal-close>
+        <button class="button-close" type="button" title="Закрыть" data-modal-close-1>
           <svg class="button-сlose-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="troll">
+        ААААААААААААААААААААААААААААААААААААААААААААААААААААА
+        <br> ПАМАГІТЄ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal-1.js"></script>
+    <script src="./js/modal-2.js"></script>
+    <script src="./js/modal-3.js"></script>
+    <script src="./js/modal-4.js"></script>
+    <script src="./js/modal-5.js"></script>
+    <script src="./js/modal-6.js"></script>
   </body>
 </html>
