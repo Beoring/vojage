@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
     <title>Vojage</title>
@@ -18,68 +18,143 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+
     <!-- Шапка сайта -->
     <header class="header sticky_header">
 
-      <div class="container footer-social">
-        <div class="footer-logo-content">
-          <a class="footer-logo" href="./index.html">
-            <img src="./images/vojage.png" width="80" lang="en" alt="Vojage" />
+      <div class="container header-social">
+        <div class="header-logo-content">
+          <a class="header-logo" href="./index.html">
+            <img src="./images/vojage-1-1-1.png" width="80" lang="en" alt="Vojage" />
           </a>
         </div>
-        <ul class="footer-social-list list">
-          <li class="footer-social-item"><a class="link footer-social-item-link current" href="./index.html">Главная</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
+        <button type="button" class="menu-btn menu-open-btn">
+          <svg class="menu-btn__icon-menu" width="60" height="60">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <ul class="header-social-list list">
+          <li class="header-social-item"><a class="link header-social-item-link current" href="./index.html">Главная</a></li>
+          <li class="header-social-item"><a class="link header-social-item-link" href="./conditions.html">Условия</a></li>
+          <li class="header-social-item"><a class="link header-social-item-link" href="./contacts.html">Контакты</a></li>
         </ul>
-        <div class="footer-social">
-          <ul class="footer-social-list list">
-            <li class="footer-social-item">
-              <a class="link footer-social-item-link footer-social-item-link-1" href="tel:+48111111111">+48 111 111 111</a>
+        <div class="header-social">
+          <ul class="header-social-list list">
+            <li class="header-social-item">
+              <a class="link header-social-item-link header-social-item-link-1" href="tel:+48111111111">+48 111 111 111</a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link-1 link" href="">
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
                 <img
-                  class="certificates-item-content-image img"
+                  class="header-item-content-image img"
                   src="./images/ua.png"
                   width="25"
                 />
               </a>
             </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link-1 link" href="">
+              <li class="header-social-item">
+                <a class="header-social-link-1 link" href="">
                   <img
-                    class="certificates-item-content-image img"
+                    class="header-item-content-image img"
                     src="./images/pl.png"
                     width="25"
                   />
                 </a>
               </li>
-                <li class="footer-social-item">
-                  <a class="footer-social-link-1 link" href="">
+                <li class="header-social-item">
+                  <a class="header-social-link-1 link" href="">
                     <img
-                      class="certificates-item-content-image img"
+                      class="header-item-content-image img"
                       src="./images/ru.png"
                       width="25"
                     />
                   </a>
                 </li>
-                <li class="footer-social-item">
-                  <div class="footer-social">
+                <li class="header-social-item">
+                  <div class="header-social">
                     <button class="header-button btn" type="button">Личный кабинет</button>
                   </div>
                 </li>
           </ul>
         </div>
+        <div class="mob-menu is-hidden">
+          <button class="menu-btn-close menu-close-btn" type="button">
+            <svg class="menu-btn-close__icon-menu-close" width="60" height="60">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__navigation list">
+            <li class="mob-menu__item">
+              <a class="header-logo" href="./index.html">
+                <img src="./images/vojage-1.png" width="250" lang="en" alt="Vojage" />
+              </a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link mob-menu__link--current link" href="./index.html">Главная</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./portfolio.html">Условия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu__navigation-down">
+            <ul class="mob-menu__contact-list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__tel link" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+              <li class="mob-menu__item">
+                <div class="header-social">
+                  <ul class="header-social-list-b list">
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <svg class="header-social-link-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <svg class="header-social-link-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <svg class="header-social-link-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <svg class="header-social-link-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
       </div>
-      <div class="header_gradient"></div>
     </header>
+
     <!-- Уникальный контент страницы -->
-    <main>
+
+    <main class="asa">
       <!-- Сертификаты -->
+
       <section class="certificates section">
         <div class="container">
           <h2 class="visually-hidden">Сертификаты</h2>
@@ -87,47 +162,42 @@
             <li class="certificates-item">
               <div class="certificates-item-content">
                 <img
-                  class="certificates-item-content-image img"
+                  class="certificates-item-content-image"
                   src="./images/partner1.png"
                   alt="Сертификат 1"
-                  width="130"
                 />
               </div>
             </li>
             <li class="certificates-item">
               <div class="certificates-item-content">
                 <img
-                  class="certificates-item-content-image img"
+                  class="certificates-item-content-image"
                   src="./images/partner2.png"
                   alt="Сертификат 2"
-                  width="130"
                 />
               </div>
             </li>
             <li class="certificates-item">
               <div class="certificates-item-content">
                 <img
-                  class="certificates-item-content-image img"
+                  class="certificates-item-content-image"
                   src="./images/partner3.png"
                   alt="Сертификат 3"
-                  width="130"
                 />
               </div>
             </li>
             <li class="certificates-item">
               <div class="certificates-item-content">
                 <img
-                  class="certificates-item-content-image img"
+                  class="certificates-item-content-image"
                   src="./images/partner4.png"
                   alt="Сертификат 4"
-                  width="130"
                 />
               </div>
             </li>
           </ul>
         </div>
       </section>
-
       <!-- Герой -->
       <section class="hero">
         <div class="container">
@@ -142,125 +212,14 @@
           <br />
           <br />
           <div class="hero-modal hero-title">
-            <button class="hero-button btn" type="button" >Послать запрос</button>
+            <button class="hero-button btn" type="button">Послать запрос</button>
           </div>
         </div>
         <div class="hero-padding"></div>
       </section>
 
-      <!-- Преимущества -->
-      <section class="advantages section">
-        <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advantages-list list">
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-1>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/avto.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-2>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/kabinet.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="advantages section">
-        <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advantages-list list">
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-3>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/podwyk.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-4>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/postoi.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="advantages section">
-        <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advantages-list list">
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-5>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/podwyk.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-            <li class="advantages-item a1 picture__wrapper">
-              <button  class="test" type="button" data-modal-open-6>
-                <div>
-              <div class="advantages-item-content">
-                <h3 class="advantages-item-title">Авто под выкуп</h3>
-              </div>
-              <div class="advantages-item-1">
-                <img
-                  class="advantages-item-image"
-                  src="./images/postoi.png"
-                  alt="Кабинет"
-                  width="550"
-                />
-              </div></div></button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Партнерка -->
+      <!-- Партнеры -->
+
       <section class="partners section">
         <div class="container">
           <h2 class="visually-hidden">Партнерка</h2>
@@ -271,7 +230,7 @@
                   class="partners-item-content-image img"
                   src="./images/uber.png"
                   alt="Сертификат 1"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
@@ -281,7 +240,7 @@
                   class="partners-item-content-image img"
                   src="./images/bolt.png"
                   alt="Сертификат 2"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
@@ -291,7 +250,7 @@
                   class="partners-item-content-image img"
                   src="./images/freenow.png"
                   alt="Сертификат 3"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
@@ -301,7 +260,7 @@
                   class="partners-item-content-image img"
                   src="./images/bliq.png"
                   alt="Сертификат 4"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
@@ -309,9 +268,9 @@
               <div class="partners-item-content">
                 <img
                   class="partners-item-content-image img"
-                  src="./images/bolt.png"
+                  src="./images/bra.png"
                   alt="Сертификат 5"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
@@ -319,17 +278,227 @@
               <div class="partners-item-content">
                 <img
                   class="partners-item-content-image img"
-                  src="./images/uber.png"
+                  src="./images/itaxi.png"
                   alt="Сертификат 6"
-                  width="130"
+                  width="100"
                 />
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- Преимущества -->
+
+      <section class="advantages section">
+        <div class="container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages-list list">
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-1>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/avto.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-2>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/kabinet.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages section">
+        <div class="container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages-list list">
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-3>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/podwyk.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-4>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/postoi.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages section">
+        <div class="container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages-list list">
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-3>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/podwyk.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="advantages-item a1 picture__wrapper">
+              <button class="test" type="button" data-modal-open-4>
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Авто под выкуп</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <img
+                      class="advantages-item-image"
+                      src="./images/postoi.png"
+                      alt="Кабинет"
+                      width="550"
+                    />
+                  </div>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+
+<section class="section section__customers" id="about">
+  <div class="container">
+    <h2 class="visually-hidden">Отзывы</h2>
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        
+        <article class="swiper-slide">
+          <h3 class="visually-hidden">Слайдер 1</h3>
+          <div class="swiper-slide__position">
+          <img
+            class="swiper-slide__img"
+            srcset="
+            ./images/vojage.png 
+            "
+            src="./images/sasha.png"
+            alt="Nick's photo"
+            width="85"
+          /></div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p class="testimonial__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+            </div>
+          </div>
+          <p class="testimonial__name">Макс, Краков</p>
+        </article>
+        
+        <article class="swiper-slide">
+          <h3 class="visually-hidden">Слайдер 2</h3>
+          <div class="swiper-slide__position">
+          <img
+            class="swiper-slide__img"
+            srcset="
+            ./images/vojage.png 
+            "
+            src="./images/sasha.png"
+            alt="Nick's photo"
+            width="85"
+          /></div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p class="testimonial__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+            </div>
+          </div>
+          <p class="testimonial__name">Игорь, Познань</p>
+        </article>
+        
+        <article class="swiper-slide">
+          <h3 class="visually-hidden">Слайдер</h3>
+          <div class="swiper-slide__position">
+          <img
+            class="swiper-slide__img"
+            srcset="
+            ./images/vojage.png 
+          
+            "
+            src="./images/sasha.png"
+            alt="Nick's photo"
+            width="85"
+          />
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p class="testimonial__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+            </div>
+          </div>
+          <p class="testimonial__name">Катя, Вроцлав</p>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
     </main>
+
     <!-- Футер -->
+     
     <footer class="footer">
       <div class="container footer-social">
         <div class="footer-logo-content">
@@ -337,16 +506,16 @@
             <img src="./images/vojage-1.png" width="200" lang="en" alt="Vojage" />
           </a>
         </div>
-        <ul class="footer-social-list list">
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a>         &#10072</li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a>         &#10072</li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a>         &#10072</li>
-          <li class="footer-social-item">
-            <a class="link footer-social-item-link" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
+        <ul class="footer-social-list-a list">
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
         </ul>
+        <div class="footer-social-item-tel">
+          <a class="link footer-social-item-link" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
         <div class="footer-social">
-          <ul class="footer-social-list list">
+          <ul class="footer-social-list-b list">
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
                 <svg class="footer-social-link-icon" width="20" height="20">
@@ -387,15 +556,24 @@
           </svg>
         </button>
         <div class="troll">
-        ААААААААААААААААААААААААААААААААААААААААААААААААААААА
-        <br> ПАМАГІТЄ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! </div>
-      </div>
+          <h3 class="advantages-item-title">Авто под выкуп</h3>
+        <img
+                      class="afa"
+                      src="./images/podwyk.png"
+                      alt="Кабинет"
+                  
+                    />
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/modal-1.js"></script>
     <script src="./js/modal-2.js"></script>
     <script src="./js/modal-3.js"></script>
     <script src="./js/modal-4.js"></script>
     <script src="./js/modal-5.js"></script>
     <script src="./js/modal-6.js"></script>
+    <script src="./js/menu.js"></script>
+    
   </body>
 </html>
