@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vojage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+
+    <!-- Шапка сайта -->
+    <header class="header sticky_header">
+
+      <div class="container header-social">
+        <div class="header-logo-content">
+          <a class="header-logo" href="./index.html">
+            <img src="./images/vojage2.png" width="120" lang="en" alt="Vojage" />
+          </a>
+        </div>
+        <button type="button" class="menu-btn menu-open-btn">
+          <svg class="menu-btn__icon-menu" width="60" height="60">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <ul class="header-social-list list">
+          <li class="header-social-item"><a class="link header-social-item-link current" href="./index.html">Главная</a></li>
+          <li class="header-social-item"><a class="link header-social-item-link" href="./conditions.html">Условия</a></li>
+          <li class="header-social-item"><a class="link header-social-item-link" href="./contacts.html">Контакты</a></li>
+        </ul>
+        <div class="header-social">
+          <ul class="header-social-list list">
+            <li class="header-social-item">
+              <a class="link header-social-item-link header-social-item-link-1" href="tel:+48730852333">+48 730 852 333</a>
+            </li>
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
+                <img
+                  class="header-item-content-image img"
+                  src="./images/ua.png"
+                  width="25"
+                />
+              </a>
+            </li>
+              <li class="header-social-item">
+                <a class="header-social-link-1 link" href="">
+                  <img
+                    class="header-item-content-image img"
+                    src="./images/pl.png"
+                    width="25"
+                  />
+                </a>
+              </li>
+                <li class="header-social-item">
+                  <a class="header-social-link-1 link" href="">
+                    <img
+                      class="header-item-content-image img"
+                      src="./images/ru.png"
+                      width="25"
+                    />
+                  </a>
+                </li>
+                <li class="header-social-item">
+                  <div class="header-social">
+                    <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
+                  </div>
+                </li>
+          </ul>
+        </div>
+        <div class="mob-menu is-hidden">
+          <button class="menu-btn-close menu-close-btn" type="button">
+            <svg class="menu-btn-close__icon-menu-close" width="60" height="60">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          
+          <ul class="mob-menu__navigation list">
+            <li class="mob-menu__item">
+              <a class="header-logo" href="./index.html">
+                <img src="./images/vojage-1.png" width="250" lang="en" alt="Vojage" />
+              </a>
+            </li>
+            <li class="mob-menu__item">
+              <div class="header-social">
+                <ul class="header-social-list-b list">
+                  <li class="header-social-item">
+                    <a class="header-social-link-1 link" href="">
+                      <img
+                        class="header-item-content-image img"
+                        src="./images/ua.png"
+                        width="25"
+                      />
+                    </a>
+                  </li>
+                  <li class="header-social-item">
+                    <a class="header-social-link-1 link" href="">
+                      <img
+                        class="header-item-content-image img"
+                        src="./images/pl.png"
+                        width="25"
+                      />
+                    </a>
+                  </li>
+                  <li class="header-social-item">
+                    <a class="header-social-link-1 link" href="">
+                      <img
+                        class="header-item-content-image img"
+                        src="./images/ru.png"
+                        width="25"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mob-menu__item">
+              <div class="header-social">
+                <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
+              </div>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link mob-menu__link--current link" href="./index.html">Главная</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./portfolio.html">Условия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu__navigation-down">
+            <ul class="mob-menu__contact-list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__tel link" href="tel:+48730852333">+48 730 852 333</a>
+              </li>
+              <li class="mob-menu__item">
+                <div class="header-social">
+                  <ul class="header-social-list-b list">
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="https://t.me/VojageKrakow">
+                        <img class="header-social-link-icon" width="25" height="25"
+                          src="./images/telegram.png"
+                      ></a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <img class="header-social-link-icon" width="25" height="25"
+                          src="./images/instagram.png"
+                      ></a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
+                        <img class="header-social-link-icon" width="25" height="25"
+                          src="./images/facebook.png"
+                      ></a>
+                    </li>
+                    <li class="header-social-item">
+                      <a class="header-social-link link" href="">
+                        <img class="header-social-link-icon" width="25" height="25"
+                          src="./images/whatsapp.png"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </header>
+
+    <!-- Уникальный контент страницы -->
+
+    
+
+      <section class="partners-1 section">
+        <div class="container">
+          <h2 class="visually-hidden">Партнерка</h2>
+          <ul class="partners-list list">
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/uber.png"
+                  alt="Сертификат 1"
+                  width="100"
+                />
+              </div>
+            </li>
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/bolt.png"
+                  alt="Сертификат 2"
+                  width="100"
+                />
+              </div>
+            </li>
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/freenow.png"
+                  alt="Сертификат 3"
+                  width="100"
+                />
+              </div>
+            </li>
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/bliq.png"
+                  alt="Сертификат 4"
+                  width="100"
+                />
+              </div>
+            </li>
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/xtaksometr.png"
+                  alt="Сертификат 5"
+                  width="100"
+                />
+              </div>
+            </li>
+            <li class="partners-item">
+              <div class="partners-item-content">
+                <img
+                  class="partners-item-content-image img"
+                  src="./images/itaxi.png"
+                  alt="Сертификат 6"
+                  width="100"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="conditions section">
+        <div class="container">
+          
+          
+            <div class="advantages-item a1 dadad">
+              <hr align="center" width="150" size="2" color="#d00a0a" /><br>
+    
+              <h1 align="center">Условия</h1>
+              <br>
+             <p> <strong>Vojage Partner</strong> — ваш надежный партнер по сотрудничеству с ведущими сервисами такси, включая Uber, BOLT, FreeNow, iTaxi и E-taksometr, предоставляющий широкий спектр услуг на всей территории Польши. Мы предлагаем гибкие форматы взаимодействия, адаптированные под индивидуальные потребности каждого водителя.
+             </p><br>
+              <p>Варианты сотрудничества:</p>  
+              <p>1. Umowa o pracę (Трудовой договор)</p>  
+              <p>Вариант 1: Гибкая система оплаты</p><br>
+              <p>Возможность выбора ставки в зависимости от предпочтений.</p><br>  
+              <p>Партнерская комиссия: 50 zł/неделя.</p><br>  
+              <p>Налогообложение:</p><br>   
+              <p>VAT: 6% на основной доход, 23% на бонусы и компенсации.</p><br>   
+              <p>Сумма налогов — от 350 zł в месяц, зависит от ставки и количества рабочих дней.</p><br>  
+              <p>Важно:</p>
+              <p>Для водителей, подающих на карту побыта, рекомендуется работа на полной ставке.
+                Также возможны варианты с частичной занятостью (1/8 – 1/2 ставки) с потенциальной экономией на налогах, но повышенным риском отказа в получении карты.</p><br>
+              <p>Вариант 2: Фиксированная еженедельная оплата</p><br>
+              <p>Фиксированная комиссия: 250 zł/неделя.</p><br>
+              <p>Налоги и VAT: 0 zł.</p><br>
+              <p>Важно: данный вариант не подходит тем, кто планирует подаваться на карту побыта.</p><br>
+              <p>2. B2B JDG (Индивидуальная предпринимательская деятельность)
+                Стандартный B2B JDG:</p><br>
+              <p>Партнерская комиссия: 50 zł/неделя.</p><br>
+              <p>Налогообложение: 6% VAT на сумму Netto, 23% VAT на бонусы.</p><br>
+              <p>B2B JDG для плательщиков VAT:</p><br>
+              <p>Партнерская комиссия: 100 zł/неделя.</p><br>
+              <p>Налогообложение: 0% VAT.</p><br>
+              <p>Независимо от выбранной формы сотрудничества, мы гарантируем профессиональную поддержку, консультации по вопросам налогообложения и документации, а также сопровождение на всех этапах вашей деятельности.</p>
+              <p><strong>Vojage Partner</strong> — это партнерство, ориентированное на развитие, стабильность и взаимную выгоду.</p>
+              <br>
+              <hr align="center" width="150" size="2" color="#d00a0a" />
+              
+            </div>
+              
+          
+        </div>
+      </section>
+
+     
+      
+
+     
+
+
+    </main>
+
+    <!-- Футер -->
+     
+    <footer class="footer">
+      <div class="container footer-social">
+        <div class="footer-logo-content">
+          <a class="footer-logo" href="./index.html">
+            <img src="./images/vojage-1.png" width="200" lang="en" alt="Vojage" />
+          </a>
+        </div>
+        <ul class="footer-social-list-a list">
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
+          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
+        </ul>
+        <div class="footer-social-item-tel">
+          <a class="link footer-social-item-link" href="tel:+48730852333">+48 730 852 333</a>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social-list-b list">
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://t.me/VojageKrakow">
+                <img class="footer-social-link-icon" width="25" height="25"
+                  src="./images/telegram.png"
+              >
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="">
+                <img class="footer-social-link-icon" width="25" height="25"
+                  src="./images/instagram.png" >
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
+                <img class="footer-social-link-icon" width="25" height="25"
+                src="./images/facebook.png"
+              >
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="">
+                <img class="footer-social-link-icon" width="25" height="25"
+                  src="./images/whatsapp.png"
+              >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/menu.js"></script>
+    
+  </body>
+</html>
