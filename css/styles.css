@@ -47,7 +47,7 @@ body {
   background: url('/images/b.png');
   background-color: var(--bg-main-color);
   color: var(--text-main-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1422,6 +1422,16 @@ body {
 }
 
 /*--------------ADVANTAGES------------*/
+
+.conditions-item {
+  background-color: #ffffffad;
+  border-radius: 20px;
+  border-color: #000;
+  border: 1px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  
+}
 
 @media screen and (min-width: 768px) {
   .advantages-list {
