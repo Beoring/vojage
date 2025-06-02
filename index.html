@@ -18,17 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
 
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="stylesheet" href="./css/styles.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
     <!-- Шапка сайта -->
-    <header class="header sticky_header">
-
+    <header class="header sticky-header">
       <div class="container header-social">
         <div class="header-logo-content">
           <a class="header-logo" href="./index.html">
@@ -41,14 +38,24 @@
           </svg>
         </button>
         <ul class="header-social-list list">
-          <li class="header-social-item"><a class="link header-social-item-link current" href="./index.html">Главная</a></li>
-          <li class="header-social-item"><a class="link header-social-item-link" href="./conditions.html">Условия</a></li>
-          <li class="header-social-item"><a class="link header-social-item-link" href="./contacts.html">Контакты</a></li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link current" href="./index.html">Главная</a>
+          </li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link" href="./conditions.html">Условия</a>
+          </li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link" href="./contacts.html">Контакты</a>
+          </li>
         </ul>
         <div class="header-social">
           <ul class="header-social-list list">
             <li class="header-social-item">
-              <a class="link header-social-item-link header-social-item-link-1" href="tel:+48730852333">+48 730 852 333</a>
+              <a
+                class="link header-social-item-link header-social-item-link-tel"
+                href="tel:+48730852333"
+                >+48 730 852 333</a
+              >
             </li>
             <li class="header-social-item">
               <a class="header-social-link-1 link" href="">
@@ -56,32 +63,40 @@
                   class="header-item-content-image img"
                   src="./images/ua.png"
                   width="25"
+                  lang="en"
+                  alt="UA"
                 />
               </a>
             </li>
-              <li class="header-social-item">
-                <a class="header-social-link-1 link" href="">
-                  <img
-                    class="header-item-content-image img"
-                    src="./images/pl.png"
-                    width="25"
-                  />
-                </a>
-              </li>
-                <li class="header-social-item">
-                  <a class="header-social-link-1 link" href="">
-                    <img
-                      class="header-item-content-image img"
-                      src="./images/ru.png"
-                      width="25"
-                    />
-                  </a>
-                </li>
-                <li class="header-social-item">
-                  <div class="header-social">
-                    <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
-                  </div>
-                </li>
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
+                <img
+                  class="header-item-content-image img"
+                  src="./images/pl.png"
+                  width="25"
+                  lang="en"
+                  alt="PL"
+                />
+              </a>
+            </li>
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
+                <img
+                  class="header-item-content-image img"
+                  src="./images/ru.png"
+                  width="25"
+                  lang="en"
+                  alt="RU"
+                />
+              </a>
+            </li>
+            <li class="header-social-item">
+              <div class="header-social">
+                <a class="header-button btn link" href="https://partner.gozko.eu/" target="_blank"
+                  >Личный кабинет</a
+                >
+              </div>
+            </li>
           </ul>
         </div>
         <div class="mob-menu is-hidden">
@@ -90,7 +105,7 @@
               <use href="./images/icons.svg#icon-menu-close"></use>
             </svg>
           </button>
-          
+
           <ul class="mob-menu__navigation list">
             <li class="mob-menu__item">
               <a class="header-logo" href="./index.html">
@@ -106,6 +121,8 @@
                         class="header-item-content-image img"
                         src="./images/ua.png"
                         width="25"
+                        lang="en"
+                        alt="UA"
                       />
                     </a>
                   </li>
@@ -115,6 +132,8 @@
                         class="header-item-content-image img"
                         src="./images/pl.png"
                         width="25"
+                        lang="en"
+                        alt="PL"
                       />
                     </a>
                   </li>
@@ -124,6 +143,8 @@
                         class="header-item-content-image img"
                         src="./images/ru.png"
                         width="25"
+                        lang="en"
+                        alt="RU"
                       />
                     </a>
                   </li>
@@ -132,17 +153,21 @@
             </li>
             <li class="mob-menu__item">
               <div class="header-social">
-                <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
+                <a class="header-button btn link" href="https://partner.gozko.eu/" target="_blank"
+                  >Личный кабинет</a
+                >
               </div>
             </li>
             <li class="mob-menu__item">
-              <a class="mob-menu__link mob-menu__link--current link" href="./index.html">Главная</a>
+              <a class="mob-menu__link link" href="./index.html">Главная</a>
             </li>
             <li class="mob-menu__item">
               <a class="mob-menu__link link" href="./conditions.html">Условия</a>
             </li>
             <li class="mob-menu__item">
-              <a class="mob-menu__link link" href="./contacts.html">Контакты</a>
+              <a class="mob-menu__link mob-menu__link--current link" href="./contacts.html"
+                >Контакты</a
+              >
             </li>
           </ul>
           <div class="mob-menu__navigation-down">
@@ -155,49 +180,68 @@
                   <ul class="header-social-list-b list">
                     <li class="header-social-item">
                       <a class="header-social-link link" href="https://t.me/VojageKrakow">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/telegram.png"
-                      ></a>
+                          lang="en"
+                          alt="Telegram"
+                      /></a>
                     </li>
                     <li class="header-social-item">
                       <a class="header-social-link link" href="">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/instagram.png"
-                      ></a>
+                          lang="en"
+                          alt="Instagram"
+                      /></a>
                     </li>
                     <li class="header-social-item">
-                      <a class="header-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
-                        <img class="header-social-link-icon" width="25" height="25"
+                      <a
+                        class="header-social-link link"
+                        href="https://www.facebook.com/profile.php?id=61575973259730"
+                      >
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/facebook.png"
-                      ></a>
+                          lang="en"
+                          alt="Facebook"
+                      /></a>
                     </li>
                     <li class="header-social-item">
                       <a class="header-social-link link" href="">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/whatsapp.png"
-                      ></a>
+                          lang="en"
+                          alt="Whatsapp"
+                      /></a>
                     </li>
                   </ul>
                 </div>
               </li>
             </ul>
           </div>
+        </div>
       </div>
     </header>
 
     <!-- Уникальный контент страницы -->
 
-    <main class="asa">
-      
+    <main>
       <section class="photo">
-        <div class="container news">
-        <img
-        class="partners-item-content-image-1"
-        src="./images/1.png"
-        alt="Сертификат 1"
-      
-      />
-    </div>
+        <div class="container photo-stable">
+          <h2 class="visually-hidden">Главное фото</h2>
+          <img class="photo-item-content-image-1" src="./images/1a.png" alt="Главное фото" />
+        </div>
       </section>
 
       <!-- Герой -->
@@ -296,8 +340,12 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item a1 picture__wrapper">
-              <button class="test" type="button" data-modal-open-1>
+            <li class="advantages-item shadow-main picture__wrapper">
+              <button
+                class="advantages-item-content-button js-open-modal"
+                type="button"
+                data-modal="1"
+              >
                 <div>
                   <div class="advantages-item-content">
                     <h3 class="advantages-item-title">Аренда автомобилей для такси</h3>
@@ -306,24 +354,28 @@
                     <img
                       class="advantages-item-image"
                       src="./images/foto1.jpg"
-                      alt="Кабинет"
+                      alt="Аренда автомобилей для такси"
                       width="550"
                     />
                   </div>
                 </div>
               </button>
             </li>
-            <li class="advantages-item a1 picture__wrapper">
-              <button class="test" type="button" data-modal-open-2>
+            <li class="advantages-item shadow-main picture__wrapper">
+              <button
+                class="advantages-item-content-button js-open-modal"
+                type="button"
+                data-modal="2"
+              >
                 <div>
                   <div class="advantages-item-content">
-                    <h3 class="advantages-item-title">Работа от "борта"</h3>
+                    <h3 class="advantages-item-title">Работа в такси от "борта"</h3>
                   </div>
                   <div class="advantages-item-1">
                     <img
                       class="advantages-item-image"
                       src="./images/foto2.jpg"
-                      alt="Кабинет"
+                      alt="Работа в такси от борта"
                       width="550"
                     />
                   </div>
@@ -337,25 +389,12 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item a1 picture__wrapper">
-              <button class="test" type="button" data-modal-open-3>
-                <div>
-                  <div class="advantages-item-content">
-                    <h3 class="advantages-item-title">Уникальный личный кабинет</h3>
-                  </div>
-                  <div class="advantages-item-1">
-                    <img
-                      class="advantages-item-image"
-                      src="./images/foto3.jpg"
-                      alt="Кабинет"
-                      width="550"
-                    />
-                  </div>
-                </div>
-              </button>
-            </li>
-            <li class="advantages-item a1 picture__wrapper">
-              <button class="test" type="button" data-modal-open-4>
+            <li class="advantages-item shadow-main picture__wrapper">
+              <button
+                class="advantages-item-content-button js-open-modal"
+                type="button"
+                data-modal="3"
+              >
                 <div>
                   <div class="advantages-item-content">
                     <h3 class="advantages-item-title">Автомобиль по системе выкупа</h3>
@@ -363,10 +402,36 @@
                   <div class="advantages-item-1">
                     <img
                       class="advantages-item-image"
-                      src="./images/foto1.jpg"
-                      alt="Кабинет"
+                      src="./images/foto3.jpg"
+                      alt="Автомобиль по системе выкупа"
                       width="550"
                     />
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="advantages-item shadow-main picture__wrapper">
+              <button
+                class="advantages-item-content-button js-open-modal"
+                type="button"
+                data-modal="4"
+              >
+                <div>
+                  <div class="advantages-item-content">
+                    <h3 class="advantages-item-title">Уникальный личный кабинет</h3>
+                  </div>
+                  <div class="advantages-item-1">
+                    <video
+                      class="advantages-item-image"
+                      width="550"
+                      src="https://7tage.eu/wp-content/uploads/2025/01/11111112-1.mp4"
+                      autoplay=""
+                      muted=""
+                      playsinline=""
+                      loop=""
+                    >
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </button>
@@ -423,137 +488,141 @@
 
       <!-- Отзывы -->
 
-<section class="section section__customers" id="about">
-  <div class="container">
-    <h2 class="visually-hidden">Отзывы</h2>
-    
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        
-        <article class="swiper-slide">
-          <h3 class="visually-hidden">Слайдер 1</h3>
-          <div class="swiper-slide__position">
-          <img
-            class="swiper-slide__img"
-            srcset="
-            ./images/testimonial-1.png 
-            "
-            src="./images/sasha.png"
-            alt="Nick's photo"
-            width="85"
-          /></div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p class="testimonial__text">
-                Пришел в Vojage по совету знакомого, не пожалел. Тут хотя бы отношение нормальное, не как в других, где ты просто «винтик». Машину дали ухоженную, в салоне приятно работать. Та и в целом на все вопросы получаю ответы не через неделю, а в тот же день.
-              </p>
-            </div>
-          </div>
-          <p class="testimonial__name" lang="pl">Maksim, Kraków</p>
-        </article>
-        
-        <article class="swiper-slide">
-          <h3 class="visually-hidden">Слайдер 2</h3>
-          <div class="swiper-slide__position">
-          <img
-            class="swiper-slide__img"
-            srcset="
-            ./images/testimonial-2.png 
-            "
-            src="./images/sasha.png"
-            alt="Nick's photo"
-            width="85"
-          /></div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p class="testimonial__text">
-                Работаю уже почти год, и пока не думаю менять. Условия устраивают, всё по-честному. В Кракове особенно круто работать, если находишь общий язык с клиентами, особенно с иностранцами, по таксометру тарифы лучше всего)
-              </p>
-            </div>
-          </div>
-          <p class="testimonial__name">Oleg, Poznań</p>
-        </article>
-        
-        <article class="swiper-slide">
-          <h3 class="visually-hidden">Слайдер 3</h3>
-          <div class="swiper-slide__position">
-          <img
-            class="swiper-slide__img"
-            srcset="
-            ./images/testimonial-3.png  
-          
-            "
-            src="./images/sasha.png"
-            alt="Nick's photo"
-            width="85"
-          />
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p class="testimonial__text">
-                Скажу честно, достаточно фирм поменял, как минимум из-за плохого мягко говоря отношения, тут же и связь с менеджером всегда есть, в критический ситуациях всегда можно набрать попросить помощь, трудоустраивают и выпускают на линию быстро, и на кофе хоть каждый можно приезжать просто так😂
-              </p>
-            </div>
-          </div>
-          <p class="testimonial__name" lang="pl">Aleksandr, Wrocław</p>
-        </article>
+      <section class="section section__customers">
+        <div class="container">
+          <h2 class="visually-hidden">Отзывы</h2>
 
-        <article class="swiper-slide">
-          <h3 class="visually-hidden">Слайдер 4</h3>
-          <div class="swiper-slide__position">
-          <img
-            class="swiper-slide__img"
-            srcset="
-            ./images/testimonial-4.png 
-          
-            "
-            src="./images/sasha.png"
-            alt="Nick's photo"
-            width="85"
-          />
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p class="testimonial__text">
-                О партнёре узнал от знакомого, работаю в такси не первый год в Кракове, решил попробовать перейти к ним. Скажу так, проблем на данном этапе не было, терпения у менеджера отличное, так как мне нужно иногда и 10 раз повторить или напомнить о чём-то) Крутая вещь таксометр, по нему кто умеет работать, очень облегчит заработок) от себя рекомендую партнёра, надеюсь в том же духе всё будет оставаться)
-              </p>
-            </div>
-          </div>
-          <p class="testimonial__name" lang="pl">Igor, Warszawa</p>
-        </article>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide">
+                <h3 class="visually-hidden">Слайдер 1</h3>
+                <div class="swiper-slide__position">
+                  <img
+                    class="swiper-slide__img"
+                    srcset="./images/testimonial-1.png"
+                    src="/images/testimonial-1.png"
+                    alt="Фото отзыв"
+                    width="85"
+                  />
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial__wrapper">
+                    <p class="testimonial__text">
+                      Пришел в Vojage по совету знакомого, не пожалел. Тут хотя бы отношение
+                      нормальное, не как в других, где ты просто «винтик». Машину дали ухоженную, в
+                      салоне приятно работать. Та и в целом на все вопросы получаю ответы не через
+                      неделю, а в тот же день.
+                    </p>
+                  </div>
+                </div>
+                <p class="testimonial__name" lang="pl">Maksim, Kraków</p>
+              </article>
 
-        <article class="swiper-slide">
-          <h3 class="visually-hidden">Слайдер 5</h3>
-          <div class="swiper-slide__position">
-          <img
-            class="swiper-slide__img"
-            srcset="
-            ./images/testimonial-5.png 
-          
-            "
-            src="./images/testimonial-1.png"
-            alt="Nick's photo"
-            width="85"
-          />
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p class="testimonial__text">
-                Пришел в Vojage по совету знакомого, не пожалел. Тут хотя бы отношение нормальное, не как в других, где ты просто «винтик». Машину дали ухоженную, в салоне приятно работать. Та и в целом на все вопросы получаю ответы не через неделю, а в тот же день.
-              </p>
+              <article class="swiper-slide">
+                <h3 class="visually-hidden">Слайдер 2</h3>
+                <div class="swiper-slide__position">
+                  <img
+                    class="swiper-slide__img"
+                    srcset="./images/testimonial-2.png"
+                    src="/images/testimonial-2.png"
+                    alt="Фото отзыв"
+                    width="85"
+                  />
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial__wrapper">
+                    <p class="testimonial__text">
+                      Работаю уже почти год, и пока не думаю менять. Условия устраивают, всё
+                      по-честному. В Кракове особенно круто работать, если находишь общий язык с
+                      клиентами, особенно с иностранцами, по таксометру тарифы лучше всего)
+                    </p>
+                  </div>
+                </div>
+                <p class="testimonial__name">Oleg, Kraków</p>
+              </article>
+
+              <article class="swiper-slide">
+                <h3 class="visually-hidden">Слайдер 3</h3>
+                <div class="swiper-slide__position">
+                  <img
+                    class="swiper-slide__img"
+                    srcset="./images/testimonial-3.png"
+                    src="./images/testimonial-3.png"
+                    alt="Фото отзыв"
+                    width="85"
+                  />
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial__wrapper">
+                    <p class="testimonial__text">
+                      Скажу честно, достаточно фирм поменял, как минимум из-за плохого мягко говоря
+                      отношения, тут же и связь с менеджером всегда есть, в критический ситуациях
+                      всегда можно набрать попросить помощь, трудоустраивают и выпускают на линию
+                      быстро, и на кофе хоть каждый можно приезжать просто так😂
+                    </p>
+                  </div>
+                </div>
+                <p class="testimonial__name" lang="pl">Aleksandr, Gdynia</p>
+              </article>
+
+              <article class="swiper-slide">
+                <h3 class="visually-hidden">Слайдер 4</h3>
+                <div class="swiper-slide__position">
+                  <img
+                    class="swiper-slide__img"
+                    srcset="./images/testimonial-4.png"
+                    src="./images/testimonial-4.png"
+                    alt="Фото отзыв"
+                    width="85"
+                  />
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial__wrapper">
+                    <p class="testimonial__text">
+                      О партнёре узнал от знакомого, работаю в такси не первый год в Кракове, решил
+                      попробовать перейти к ним. Скажу так, проблем на данном этапе не было,
+                      терпения у менеджера отличное, так как мне нужно иногда и 10 раз повторить или
+                      напомнить о чём-то) Крутая вещь таксометр, по нему кто умеет работать, очень
+                      облегчит заработок) от себя рекомендую партнёра, надеюсь в том же духе всё
+                      будет оставаться)
+                    </p>
+                  </div>
+                </div>
+                <p class="testimonial__name" lang="pl">Igor, Kraków</p>
+              </article>
+
+              <article class="swiper-slide">
+                <h3 class="visually-hidden">Слайдер 5</h3>
+                <div class="swiper-slide__position">
+                  <img
+                    class="swiper-slide__img"
+                    srcset="./images/testimonial-5.png"
+                    src="./images/testimonial-5.png"
+                    alt="Фото отзыв"
+                    width="85"
+                  />
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial__wrapper">
+                    <p class="testimonial__text">
+                      Пришёл на работать на Вояж, потому что есть
+                      <span lang="en">umowa o prace</span>, для меня это важный был пункт. Помогли с
+                      картой побыту, по многим вопросам обращался к менеджеру, много нюансов для
+                      себя лично узнал, та и в целом коммуникацией очень доволен.
+                    </p>
+                  </div>
+                </div>
+                <p class="testimonial__name" lang="pl">Stas, Gdańsk</p>
+              </article>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <p class="testimonial__name" lang="pl">Stas, Gdańsk</p>
-        </article>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
     </main>
 
     <!-- Футер -->
-     
+
     <footer class="footer">
       <div class="container footer-social">
         <div class="footer-logo-content">
@@ -562,9 +631,15 @@
           </a>
         </div>
         <ul class="footer-social-list-a list">
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./conditions.html">Условия</a>
+          </li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./contacts.html">Контакты</a>
+          </li>
         </ul>
         <div class="footer-social-item-tel">
           <a class="link footer-social-item-link" href="tel:+48730852333">+48 730 852 333</a>
@@ -573,112 +648,224 @@
           <ul class="footer-social-list-b list">
             <li class="footer-social-item">
               <a class="footer-social-link link" href="https://t.me/VojageKrakow">
-                <img class="footer-social-link-icon" width="25" height="25"
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
                   src="./images/telegram.png"
-              >
+                  lang="en"
+                  alt="Telegram"
+                />
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
-                <img class="footer-social-link-icon" width="25" height="25"
-                  src="./images/instagram.png" >
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
+                  src="./images/instagram.png"
+                  lang="en"
+                  alt="Instagram"
+                />
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
-                <img class="footer-social-link-icon" width="25" height="25"
-                src="./images/facebook.png"
+              <a
+                class="footer-social-link link"
+                href="https://www.facebook.com/profile.php?id=61575973259730"
               >
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
+                  src="./images/facebook.png"
+                  lang="en"
+                  alt="Facebook"
+                />
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
-                <img class="footer-social-link-icon" width="25" height="25"
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
                   src="./images/whatsapp.png"
-              >
+                  lang="en"
+                  alt="Whatsapp"
+                />
               </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="button-close" type="button" title="Закрыть" data-modal-close-1>
-          <svg class="button-сlose-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="troll">
-          <h3 class="advantages-item-title">1</h3>
-        <img
-                      class="afa"
-                      src="./images/foto1.jpg"
-                      alt="Кабинет"
-                  
-                    />
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+
+    <div class="modal" data-modal="1">
+      <svg class="modal__cross js-modal-close" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+
+      <div class="modal-position">
+        <h3 class="advantages-item-title">Аренда автомобилей для такси</h3>
+        <img class="modal-img" src="./images/foto1.jpg" alt="Аренда автомобилей для такси" />
+        <div class="little-text">
+          <p class="margin">
+            <span lang="en"><strong>Vojage Partner</strong></span> предлагает надёжные и выгодные
+            условия аренды автомобилей для водителей такси по всей Польше.
+          </p>
+
+          <p class="margin"><strong>Широкий выбор гибридных автомобилей</strong></p>
+          <p class="margin">
+            Мы предоставляем большой ассортимент современных гибридных авто, полностью
+            соответствующих требованиям такси-сервисов. Эти модели обеспечивают экономичную
+            эксплуатацию и комфорт в работе.
+          </p>
+
+          <p class="margin"><strong>Без залога</strong></p>
+          <p class="margin">
+            Для аренды автомобиля не требуется залог. Всё, что необходимо —
+            <strong>разовая оплата недельной аренды.</strong> Цены начинаются от
+            <strong>600 <span>zł</span></strong> в неделю.
+          </p>
+
+          <p class="margin"><strong>Автопарк в проверенном техническом состоянии</strong></p>
+          <p class="margin">
+            Все автомобили проходят регулярное техническое обслуживание. Мы гарантируем надёжность
+            наших транспортных средств и предоставляем круглосуточную поддержку водителей, включая
+            помощь при ДТП, неисправностях и других внештатных ситуациях.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="button-close" type="button" title="Закрыть" data-modal-close-2>
-          <svg class="button-сlose-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="troll">
-          <h3 class="advantages-item-title">2</h3>
-        <img
-                      class="afa"
-                      src="./images/podwyk.png"
-                      alt="Кабинет"
-                  
-                    />
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+    <div class="modal" data-modal="2">
+      <svg class="modal__cross js-modal-close" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+
+      <div class="modal-position">
+        <h3 class="advantages-item-title">Работа в такси от "борта"</h3>
+        <img class="modal-img" src="./images/foto2.jpg" alt="Работа в такси от борта" />
+        <div class="little-text">
+          <ul class="list">
+            <li class="margin">
+              <p>
+                <strong
+                  >Возможность принимать пассажиров с улицы без предварительного заказа через
+                  приложение.</strong
+                >
+              </p>
+              <p>Оплата возможна как наличными, так и банковской картой.</p>
+            </li>
+            <li class="margin">
+              <p>
+                Отсутствует необходимость в покупке дорогостоящего оборудования, такого как
+                таксометры и кассовые аппараты — достаточно смартфона с установленным приложением.
+              </p>
+            </li>
+            <li class="margin">
+              <p>
+                Фискальные чеки автоматически отправляются клиенту по SMS или электронной почте. При
+                необходимости возможно подключение фискального принтера для выдачи бумажных чеков.
+              </p>
+            </li>
+            <li>
+              <p>
+                Решение основано на одном из самых популярных и высоко оценённых среди водителей
+                приложений — <span lang="en"><strong>xTaksometr</strong></span
+                >, сертифицированном в Польше.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="button-close" type="button" title="Закрыть" data-modal-close-3>
-          <svg class="button-сlose-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="troll">
-          <h3 class="advantages-item-title">3</h3>
-        <img
-                      class="afa"
-                      src="./images/podwyk.png"
-                      alt="Кабинет"
-                  
-                    />
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+
+    <div class="modal" data-modal="3">
+      <svg class="modal__cross js-modal-close" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+
+      <div class="modal-position">
+        <h3 class="advantages-item-title">Автомобиль по системе выкупа</h3>
+        <img class="modal-img" src="./images/foto3.jpg" alt="Автомобиль по системе выкупа" />
+        <div class="little-text">
+          <p>Предлагаем автомобили с возможностью выкупа на следующих условиях:</p>
+          <br />
+          <ul class="conditions-ul-2">
+            <li><strong>Первоначальный взнос</strong> — от 10% от стоимости автомобиля.</li>
+            <li>
+              <strong>Включение автомобиля в «ПУЛ»</strong>, что позволяет отказаться от
+              обязательного страхования через АС.
+            </li>
+            <li><strong>Гибкая система выпла</strong> — еженедельные платежи.</li>
+            <li><strong>Возможность платежной паузы</strong> — до 4 недель.</li>
+            <li>
+              <strong>Срок выкупа</strong> — от 6 месяцев до 2 лет (в зависимости от условий,
+              установленных собственником автомобиля)
+            </li>
+            <li>
+              <strong>Передача лизинга</strong> — в случае невозможности дальнейших выплат
+              предоставляется возможность переоформления автомобиля на другого водителя (в течение 2
+              недель).
+            </li>
+            <li>
+              <strong>Техническое обслуживание и контроль</strong> — осуществляется через платформу
+              *Vojage Partner*.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="button-close" type="button" title="Закрыть" data-modal-close-4>
-          <svg class="button-сlose-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="troll">
-          <h3 class="advantages-item-title">4</h3>
-        <img
-                      class="afa"
-                      src="./images/podwyk.png"
-                      alt="Кабинет"
-                  
-                    />
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+
+    <div class="modal" data-modal="4">
+      <svg class="modal__cross js-modal-close" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+
+      <div class="modal-position">
+        <h3 class="advantages-item-title">Уникальный личный кабинет</h3>
+        <video
+          class="modal-img"
+          width="550"
+          src="https://7tage.eu/wp-content/uploads/2025/01/11111112-1.mp4"
+          autoplay=""
+          muted=""
+          playsinline=""
+          loop=""
+        >
+          Your browser does not support the video tag.
+        </video>
+        <div class="little-text">
+          <p>
+            <strong
+              >Личный кабинет водителя с расширенным функционалом — это полнофункциональное
+              программное решение, которое постоянно совершенствуется с учетом потребностей
+              пользователей.</strong
+            >
+          </p>
+          <br />
+          <p>Платформа предоставляет:</p>
+          <br />
+          <ul class="conditions-ul-2">
+            <li>Полный контроль над доходами.</li>
+            <li>Развернутую и прозрачную статистику в реальном времени.</li>
+            <li>Историю начислений и выплат.</li>
+            <li>Подробную структуру расходов (включая налоги, аренду, топливо и прочее).</li>
+            <li>Функцию отложенного баланса для снижения текущей финансовой нагрузки.</li>
+            <li>
+              А также множество других инструментов для эффективного управления доходами и
+              расходами.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
-    <script src="./js/modal-1.js"></script>
-    <script src="./js/modal-2.js"></script>
-    <script src="./js/modal-3.js"></script>
-    <script src="./js/modal-4.js"></script>
-    <script src="./js/modal-5.js"></script>
-    <script src="./js/modal-6.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    
   </body>
 </html>

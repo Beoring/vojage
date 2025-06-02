@@ -18,17 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
-
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
     <!-- Шапка сайта -->
-    <header class="header sticky_header">
-
+    <header class="header sticky-header">
       <div class="container header-social">
         <div class="header-logo-content">
           <a class="header-logo" href="./index.html">
@@ -41,14 +35,24 @@
           </svg>
         </button>
         <ul class="header-social-list list">
-          <li class="header-social-item"><a class="link header-social-item-link current" href="./index.html">Главная</a></li>
-          <li class="header-social-item"><a class="link header-social-item-link" href="./conditions.html">Условия</a></li>
-          <li class="header-social-item"><a class="link header-social-item-link" href="./contacts.html">Контакты</a></li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link" href="./index.html">Главная</a>
+          </li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link" href="./conditions.html">Условия</a>
+          </li>
+          <li class="header-social-item">
+            <a class="link header-social-item-link current" href="./contacts.html">Контакты</a>
+          </li>
         </ul>
         <div class="header-social">
           <ul class="header-social-list list">
             <li class="header-social-item">
-              <a class="link header-social-item-link header-social-item-link-1" href="tel:+48730852333">+48 730 852 333</a>
+              <a
+                class="link header-social-item-link header-social-item-link-tel"
+                href="tel:+48730852333"
+                >+48 730 852 333</a
+              >
             </li>
             <li class="header-social-item">
               <a class="header-social-link-1 link" href="">
@@ -56,32 +60,40 @@
                   class="header-item-content-image img"
                   src="./images/ua.png"
                   width="25"
+                  lang="en"
+                  alt="UA"
                 />
               </a>
             </li>
-              <li class="header-social-item">
-                <a class="header-social-link-1 link" href="">
-                  <img
-                    class="header-item-content-image img"
-                    src="./images/pl.png"
-                    width="25"
-                  />
-                </a>
-              </li>
-                <li class="header-social-item">
-                  <a class="header-social-link-1 link" href="">
-                    <img
-                      class="header-item-content-image img"
-                      src="./images/ru.png"
-                      width="25"
-                    />
-                  </a>
-                </li>
-                <li class="header-social-item">
-                  <div class="header-social">
-                    <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
-                  </div>
-                </li>
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
+                <img
+                  class="header-item-content-image img"
+                  src="./images/pl.png"
+                  width="25"
+                  lang="en"
+                  alt="PL"
+                />
+              </a>
+            </li>
+            <li class="header-social-item">
+              <a class="header-social-link-1 link" href="">
+                <img
+                  class="header-item-content-image img"
+                  src="./images/ru.png"
+                  width="25"
+                  lang="en"
+                  alt="RU"
+                />
+              </a>
+            </li>
+            <li class="header-social-item">
+              <div class="header-social">
+                <a class="header-button btn link" href="https://partner.gozko.eu/" target="_blank"
+                  >Личный кабинет</a
+                >
+              </div>
+            </li>
           </ul>
         </div>
         <div class="mob-menu is-hidden">
@@ -90,7 +102,7 @@
               <use href="./images/icons.svg#icon-menu-close"></use>
             </svg>
           </button>
-          
+
           <ul class="mob-menu__navigation list">
             <li class="mob-menu__item">
               <a class="header-logo" href="./index.html">
@@ -106,6 +118,8 @@
                         class="header-item-content-image img"
                         src="./images/ua.png"
                         width="25"
+                        lang="en"
+                        alt="UA"
                       />
                     </a>
                   </li>
@@ -115,6 +129,8 @@
                         class="header-item-content-image img"
                         src="./images/pl.png"
                         width="25"
+                        lang="en"
+                        alt="PL"
                       />
                     </a>
                   </li>
@@ -124,6 +140,8 @@
                         class="header-item-content-image img"
                         src="./images/ru.png"
                         width="25"
+                        lang="en"
+                        alt="RU"
                       />
                     </a>
                   </li>
@@ -132,17 +150,21 @@
             </li>
             <li class="mob-menu__item">
               <div class="header-social">
-                <a class="header-button btn link" type="button" href="https://partner.gozko.eu/" target="_blank">Личный кабинет</a>
+                <a class="header-button btn link" href="https://partner.gozko.eu/" target="_blank"
+                  >Личный кабинет</a
+                >
               </div>
             </li>
             <li class="mob-menu__item">
-              <a class="mob-menu__link mob-menu__link--current link" href="./index.html">Главная</a>
+              <a class="mob-menu__link link" href="./index.html">Главная</a>
             </li>
             <li class="mob-menu__item">
-              <a class="mob-menu__link link" href="./portfolio.html">Условия</a>
+              <a class="mob-menu__link link" href="./conditions.html">Условия</a>
             </li>
             <li class="mob-menu__item">
-              <a class="mob-menu__link link" href="">Контакты</a>
+              <a class="mob-menu__link mob-menu__link--current link" href="./contacts.html"
+                >Контакты</a
+              >
             </li>
           </ul>
           <div class="mob-menu__navigation-down">
@@ -155,40 +177,62 @@
                   <ul class="header-social-list-b list">
                     <li class="header-social-item">
                       <a class="header-social-link link" href="https://t.me/VojageKrakow">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/telegram.png"
-                      ></a>
+                          lang="en"
+                          alt="Telegram"
+                      /></a>
                     </li>
                     <li class="header-social-item">
                       <a class="header-social-link link" href="">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/instagram.png"
-                      ></a>
+                          lang="en"
+                          alt="Instagram"
+                      /></a>
                     </li>
                     <li class="header-social-item">
-                      <a class="header-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
-                        <img class="header-social-link-icon" width="25" height="25"
+                      <a
+                        class="header-social-link link"
+                        href="https://www.facebook.com/profile.php?id=61575973259730"
+                      >
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/facebook.png"
-                      ></a>
+                          lang="en"
+                          alt="Facebook"
+                      /></a>
                     </li>
                     <li class="header-social-item">
                       <a class="header-social-link link" href="">
-                        <img class="header-social-link-icon" width="25" height="25"
+                        <img
+                          class="header-social-link-icon"
+                          width="25"
+                          height="25"
                           src="./images/whatsapp.png"
-                      ></a>
+                          lang="en"
+                          alt="Whatsapp"
+                      /></a>
                     </li>
                   </ul>
                 </div>
               </li>
             </ul>
           </div>
+        </div>
       </div>
     </header>
 
     <!-- Уникальный контент страницы -->
-
-    
-
+    <main>
       <section class="partners-1 section">
         <div class="container">
           <h2 class="visually-hidden">Партнерка</h2>
@@ -256,44 +300,61 @@
           </ul>
         </div>
       </section>
-      <section class="conditions section">
+      <section class="contacts section">
         <div class="container">
-          
-          
-            <div class="conditions-item a1 dadad">
-              <hr align="center" width="150" size="2" color="#d00a0a" /><br>
-    
-              <h1 align="center">Контакты</h1>
-              <br>
-              <br>
-            <p>Для консультаций и дополнительной информации свяжитесь с нами удобным для вас способом:</p>
-              <br>
-              <p><strong>Телефон:</strong> +48 730 852 333</p><br>
-              <p><strong>Telegram:</strong> @VojageKrakow</p><br>
-              <p><strong>Facebook:</strong> Профиль Vojage Partner</p><br>
-              <p>Офис в Кракове</p>
-              <p>Мы будем рады видеть вас в нашем офисе:</p><br>
-              <p>📍 Адрес:</p>
-              <p>ul. Walerego Sławka 39a, 30-633 Kraków</p>
-              <p><a href="https://www.google.com/maps/place/Vojage+TAXI+Partner/@50.0209325,19.9601954,181m/data=!3m1!1e3!4m6!3m5!1s0x47165b08c942b9e9:0xbbc75494b6fac2e5!8m2!3d50.0209245!4d19.9604497!16s%2Fg%2F11t6z2v_gm?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D">Открыть в Google Maps</a></p><br>
-              <hr align="center" width="150" size="2" color="#d00a0a" />
-              
-            </div>
-              
-          
+          <div class="contacts-item shadow-main position">
+            <hr align="center" width="150" size="2" color="#d00a0a" />
+            <br />
+
+            <h1 align="center">Контактная информация</h1>
+            <br />
+            <p>
+              Для консультаций и дополнительной информации свяжитесь с нами удобным для вас
+              способом:
+            </p>
+            <ul class="contacts-ul">
+              <li class="">
+                <strong>Телефон: </strong
+                ><a class="contacts-link" href="tel:+48730852333">+48730852333</a>
+              </li>
+              <li lang="en" class="">
+                <strong>Telegram: </strong
+                ><a class="contacts-link" target="_blank" href="https://t.me/VojageKrakow"
+                  >@VojageKrakow</a
+                >
+              </li>
+              <li lang="en" class="">
+                <strong>Facebook: </strong
+                ><a
+                  class="contacts-link"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61575973259730"
+                  >#VojagePartner</a
+                >
+              </li>
+            </ul>
+
+            <p class="big-text"><strong>Офис в Кракове</strong></p>
+            <p>Мы будем рады видеть вас в нашем офисе:</p>
+            <p>📍 <strong>Адрес:</strong></p>
+            <p lang="pl">ul. Walerego Sławka 39a, 30-633 Kraków</p>
+            <p>
+              <a
+                class="contacts-link"
+                target="_blank"
+                href="https://www.google.com/maps/place/Vojage+TAXI+Partner/@50.0209325,19.9601954,181m/data=!3m1!1e3!4m6!3m5!1s0x47165b08c942b9e9:0xbbc75494b6fac2e5!8m2!3d50.0209245!4d19.9604497!16s%2Fg%2F11t6z2v_gm?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                >Открыть в <span lang="en">Google Maps</span></a
+              >
+            </p>
+            <br />
+            <hr align="center" width="150" size="2" color="#d00a0a" />
+          </div>
         </div>
       </section>
-
-     
-      
-
-     
-
-
     </main>
 
     <!-- Футер -->
-     
+
     <footer class="footer">
       <div class="container footer-social">
         <div class="footer-logo-content">
@@ -302,9 +363,15 @@
           </a>
         </div>
         <ul class="footer-social-list-a list">
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./index.html">Главная</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./conditions.html">Условия</a></li>
-          <li class="footer-social-item"><a class="link footer-social-item-link" href="./contacts.html">Контакты</a></li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./conditions.html">Условия</a>
+          </li>
+          <li class="footer-social-item">
+            <a class="link footer-social-item-link" href="./contacts.html">Контакты</a>
+          </li>
         </ul>
         <div class="footer-social-item-tel">
           <a class="link footer-social-item-link" href="tel:+48730852333">+48 730 852 333</a>
@@ -313,39 +380,59 @@
           <ul class="footer-social-list-b list">
             <li class="footer-social-item">
               <a class="footer-social-link link" href="https://t.me/VojageKrakow">
-                <img class="footer-social-link-icon" width="25" height="25"
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
                   src="./images/telegram.png"
-              >
+                  lang="en"
+                  alt="Telegram"
+                />
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
-                <img class="footer-social-link-icon" width="25" height="25"
-                  src="./images/instagram.png" >
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
+                  src="./images/instagram.png"
+                  lang="en"
+                  alt="Instagram"
+                />
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link link" href="https://www.facebook.com/profile.php?id=61575973259730">
-                <img class="footer-social-link-icon" width="25" height="25"
-                src="./images/facebook.png"
+              <a
+                class="footer-social-link link"
+                href="https://www.facebook.com/profile.php?id=61575973259730"
               >
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
+                  src="./images/facebook.png"
+                  lang="en"
+                  alt="Facebook"
+                />
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
-                <img class="footer-social-link-icon" width="25" height="25"
+                <img
+                  class="footer-social-link-icon"
+                  width="25"
+                  height="25"
                   src="./images/whatsapp.png"
-              >
+                  lang="en"
+                  alt="Whatsapp"
+                />
               </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
-   
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
     <script src="./js/menu.js"></script>
-    
   </body>
 </html>
